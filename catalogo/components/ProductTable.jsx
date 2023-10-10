@@ -8,8 +8,6 @@ const ProductTable = () => {
 
     const {dataAPI, setDataAPI } = useContext(ContextProductTable)
 
-     
-
     const showData = dataAPI.map((actualProduct)=>{
         return(
             <>
@@ -19,15 +17,14 @@ const ProductTable = () => {
         )
     })
 
-    
+
   return (
     <>
-   
     <div>ProductTable</div>
-    <div>Cards</div>
-    {showData}
-    
-
+        <div>Cards</div>
+    <div className={styleCSS.globalProductBox}>
+        {showData}
+    </div>
     </>
   )
 }
