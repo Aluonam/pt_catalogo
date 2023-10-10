@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import ProductTable from '@/components/ProductTable'
+import ContextApp from '@/ContextApp/ContextApp'
+
 
 export default function Home() {
   return (
@@ -12,7 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-       <ProductTable></ProductTable>
+
+        <ContextApp>
+
+          <ProductTable></ProductTable>
+
+        </ContextApp>
+
       </main>
     </>
   )
