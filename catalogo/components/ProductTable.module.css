@@ -3,37 +3,5 @@
     width: 100%;
     height: 100%;
     border: 2px solid blue;
-    display: grid;
-    grid-template-areas: 
-        "producto1" "producto2" "producto3" "producto4"
-        "producto5" "producto6" "producto7" "producto8";
-}
 
-.tablaGlobal_box1{
-    grid-area: "producto1";
-}
-
-.tablaGlobal_box2{
-    grid-area: "producto2";
-}
-
-.tablaGlobal_box3{
-    grid-area: "producto3";
-}
-
-.tablaGlobal_box4{
-    grid-area: "producto4";
-}
-
-.tablaGlobal_box5{
-    grid-area: "producto5";
-}
-.tablaGlobal_box6{
-    grid-area: "producto6";
-}
-.tablaGlobal_box7{
-    grid-area: "producto7";
-}
-.tablaGlobal_box8{
-    grid-area: "producto8";
 }
