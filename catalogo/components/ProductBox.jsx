@@ -6,9 +6,9 @@ const ProductBox = ({actualProduct}) => {
     
   return (
     <div className={styleCSS.productBox}>
-        <h3>{actualProduct.title}</h3>
+        {/* <h3>{actualProduct.title}</h3>
         <img src={actualProduct.image} className={styleCSS.productBox_img}></img>
-        <h2>{actualProduct.price}</h2>
+        <h2>{actualProduct.price}</h2> */}
     </div>
   )
 }
