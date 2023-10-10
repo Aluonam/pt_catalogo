@@ -10,10 +10,8 @@ const ProductTable = () => {
 
     const showData = dataAPI.map((actualProduct)=>{
         return(
-            <>
+
             <ProductBox actualProduct={actualProduct}></ProductBox>
-            
-            </>
         )
     })
 
