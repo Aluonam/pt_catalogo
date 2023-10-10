@@ -11,14 +11,16 @@ export const ContextApp = (props) => {
       const url = `https://fakestoreapi.com/products`;
 
       axios.get(url)
-      .then(response => console.log(response.data))
+      .then(response => setDataAPI(response.data))
       .catch(error => console.log("error detected", error))
 
     }, [])
 
+   
+
     const valueProvider = {
         dataAPI,
-        setDataAPI
+        setDataAPI,
     }
     
   return (

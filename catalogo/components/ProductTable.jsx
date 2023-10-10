@@ -5,14 +5,27 @@ import { ContextProductTable } from '@/ContextApp/ContextApp'
 
 const ProductTable = () => {
 
-    const {dataAPI, setDataAPI} = useContext(ContextProductTable)
+    const {dataAPI, setDataAPI } = useContext(ContextProductTable)
 
+     
+
+    const showData = dataAPI.map((actualProduct)=>{
+        return(
+            <>
+            <div>
+                <div>{actualProduct.title}</div>
+            </div>
+            </>
+        )
+    })
+
+    
   return (
     <>
    
     <div>ProductTable</div>
     <div>Cards</div>
-    {dataAPI}
+    {showData}
 
     </>
   )
