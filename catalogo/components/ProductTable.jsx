@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styleCSS from '@/components/ProductTable.module.css'
-import ContextApp from '@/ContextApp/ContextApp'
+import { ContextProductTable } from '@/ContextApp/ContextApp'
+
 
 const ProductTable = () => {
 
+    const {dataAPI, setDataAPI} = useContext(ContextProductTable)
+
   return (
     <>
-    <ContextApp>
+   
     <div>ProductTable</div>
     <div>Cards</div>
-    </ContextApp>
+    {dataAPI}
+
     </>
   )
 }
