@@ -26,6 +26,9 @@
     width: 100%;
     height: 75%;
     background-color: rgb(59, 159, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .productBox_price{
