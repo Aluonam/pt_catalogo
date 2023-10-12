@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styleCSS from '@/components/ProductTable.module.css'
 import { ContextProductTable } from '@/ContextApp/ContextApp'
 import ProductBox from './ProductBox'
+import Filter from './Filter'
 
 
 const ProductTable = () => {
@@ -18,11 +19,14 @@ const ProductTable = () => {
 
   return (
     <>
+
     <div>ProductTable</div>
-        <div>Cards</div>
+    <Filter setDataProduct={setDataAPI}></Filter>
+    <div>Cards</div>
     <div className={styleCSS.globalProductBox}>
         {showData}
     </div>
+    
     </>
   )
 }
