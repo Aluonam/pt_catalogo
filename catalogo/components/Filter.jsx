@@ -12,9 +12,10 @@ const Filter = ({dataProduct, setDataProduct}) => {
         setDataProduct({...dataProduct, showData:arrWomenWear})
     }
 
-    // const electronics = () => {
-    //     setDataProduct((valorActual)=>valorActual.filter((elemActual)=> elemActual.category==="electronics"))
-    // }
+    const electronics = () => {
+      const arrElectronics = dataProduct.originData.filter((e)=>e.category === "electronics")
+        setDataProduct({...dataProduct, showData:arrElectronics})
+    }
 
   return (
     <>
