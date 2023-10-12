@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Filter = () => {
+const Filter = ({setDataProduct}) => {
+
+    const mensWear = () => {
+        setDataProduct((valorActual)=>valorActual.filter((elemActual)=> elemActual.category==="men's clothing"))
+    }
+
   return (
-    <div>Filter</div>
+    <>
+    <button onClick={()=>{mensWear()}}> ropa hombre </button>
+    </>
   )
 }
 

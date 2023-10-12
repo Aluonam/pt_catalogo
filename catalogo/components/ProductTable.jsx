@@ -19,12 +19,14 @@ const ProductTable = () => {
 
   return (
     <>
+
     <div>ProductTable</div>
-        <div>Cards</div>
+    <Filter setDataProduct={setDataAPI}></Filter>
+    <div>Cards</div>
     <div className={styleCSS.globalProductBox}>
         {showData}
     </div>
-    <Filter></Filter>
+    
     </>
   )
 }
