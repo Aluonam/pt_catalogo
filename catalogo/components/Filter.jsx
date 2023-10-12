@@ -1,22 +1,24 @@
 import React from 'react'
 
-const Filter = ({setDataProduct}) => {
+const Filter = ({dataProduct, setDataProduct}) => {
 
-    const mensWear = () => {
-        setDataProduct((valorActual)=>valorActual.filter((elemActual)=> elemActual.category==="men's clothing"))
+    const menWear = () => {
+      const arrMenWear = dataProduct.originData.filter((e)=>e.category === "men's clothing")
+        setDataProduct({...dataProduct, showData:arrMenWear})
     }
 
     const womanWear = ()=>{
-        setDataProduct((valor)=> valor.filter((e)=>e.category === "women's clothing"))
+        const arrWomenWear = dataProduct.originData.filter((e)=>e.category === "women's clothing")
+        setDataProduct({...dataProduct, showData:arrWomenWear})
     }
 
-    const electronics = () => {
-        setDataProduct((valorActual)=>valorActual.filter((elemActual)=> elemActual.category==="electronics"))
-    }
+    // const electronics = () => {
+    //     setDataProduct((valorActual)=>valorActual.filter((elemActual)=> elemActual.category==="electronics"))
+    // }
 
   return (
     <>
-    <button onClick={()=>{mensWear()}}> ropa hombre </button>
+    <button onClick={()=>{menWear()}}> ropa hombre </button>
     <button onClick={()=>{womanWear()}}> ropa de mujer </button>
     <button onClick={()=>{electronics()}}> electrónica </button>
     
