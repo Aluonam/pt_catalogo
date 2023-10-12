@@ -7,9 +7,9 @@ import Filter from './Filter'
 
 const ProductTable = () => {
 
-    const {dataAPI, setDataAPI } = useContext(ContextProductTable)
+    const { dataAPI, setDataAPI } = useContext(ContextProductTable)
 
-    const showData = dataAPI.map((actualProduct)=>{
+    const showData = dataAPI.showData.map((actualProduct)=>{
         return(
 
             <ProductBox actualProduct={actualProduct}></ProductBox>
@@ -21,7 +21,7 @@ const ProductTable = () => {
     <>
 
     <div>ProductTable</div>
-    <Filter setDataProduct={setDataAPI}></Filter>
+    <Filter dataProduct={dataAPI} setDataProduct={setDataAPI}></Filter>
     <div>Cards</div>
     <div className={styleCSS.globalProductBox}>
         {showData}
