@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './Filter.module.css'
 
 const Filter = ({dataProduct, setDataProduct}) => {
 
@@ -23,12 +24,15 @@ const Filter = ({dataProduct, setDataProduct}) => {
     // <button onClick={()=>setDataAPI({originalData:dataAPI.originalData, showData:dataAPI.originalData})}>todos</button>
 
   return (
-    <>
-    <button onClick={()=>{menWear()}}> ropa hombre </button>
-    <button onClick={()=>{womanWear()}}> ropa de mujer </button>
-    <button onClick={()=>{electronics()}}> electrónica </button>
-    <button onClick={()=>{setDataProduct({originData:dataProduct.originData, showData:dataProduct.originData})}}> Mostrar todo </button>
-    </>
+    <div className={style.filterBtn}>
+
+      <button onClick={()=>{menWear()}}> ropa hombre </button>
+      <button onClick={()=>{womanWear()}}> ropa de mujer </button>
+      <button onClick={()=>{electronics()}}> electrónica </button>
+      <button onClick={()=>{setDataProduct({originData:dataProduct.originData, showData:dataProduct.originData})}}> Mostrar todo </button>
+    
+    </div>
+    
   )
 }
 

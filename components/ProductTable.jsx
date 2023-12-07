@@ -20,9 +20,8 @@ const ProductTable = () => {
   return (
     <>
 
-    <div>ProductTable</div>
     <Filter dataProduct={dataAPI} setDataProduct={setDataAPI}></Filter>
-    <div>Cards</div>
+    
     <div className={styleCSS.globalProductBox}>
         {showData}
     </div>
