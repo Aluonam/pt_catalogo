@@ -26,10 +26,10 @@ const Filter = ({dataProduct, setDataProduct}) => {
   return (
     <div className={style.filterBtn}>
 
-      <button onClick={()=>{menWear()}}> ropa hombre </button>
-      <button onClick={()=>{womanWear()}}> ropa de mujer </button>
-      <button onClick={()=>{electronics()}}> electrónica </button>
-      <button onClick={()=>{setDataProduct({originData:dataProduct.originData, showData:dataProduct.originData})}}> Mostrar todo </button>
+      <button onClick={()=>{menWear()}} className={style.buttonGradient4}> ropa hombre </button>
+      <button onClick={()=>{womanWear()}} className={style.buttonGradient4}> ropa de mujer </button>
+      <button onClick={()=>{electronics()}} className={style.buttonGradient4}> electrónica </button>
+      <button onClick={()=>{setDataProduct({originData:dataProduct.originData, showData:dataProduct.originData})}} className={style.buttonGradient2}> Mostrar todo </button>
     
     </div>
     
