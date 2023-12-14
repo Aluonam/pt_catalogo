@@ -11,4 +11,5 @@ Permite filtrar.
 React: 
 **useContext**: Utilización de la función useContext para gestionar y compartir el estado de la aplicación de manera eficiente.
 **useState**: Empleo de useState con objetos para manejar y actualizar el estado de la aplicación.
+HTML y CSS.
 *Este proyecto consume la API (https://fakestoreapi.com/products).
