@@ -1,4 +1,4 @@
-## CATÁLOGO DE PRODUCTOS
+## CATÁLOGO DE PRODUCTOS´
 
 ### En qué Consiste el Proyecto:
 
@@ -15,3 +15,6 @@ React:
 **useState**: Empleo de useState con objetos para manejar y actualizar el estado de la aplicación.
 HTML y CSS.
 *Este proyecto consume la API (https://fakestoreapi.com/products).
+
+
+![catalogoEsqueleto](image.png)
